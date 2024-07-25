@@ -1,7 +1,5 @@
 import math
 
-import math
-
 def time_adjusted(distance, initial_v, slope):
     """Calcula el tiempo de viaje ajustado teniendo en cuenta la pendiente de la carretera.
 
