@@ -1,0 +1,65 @@
+# Requisitos
+Matemática I:,
+Lenguaje I:,
+Venezuela Siglo XXI I:,
+Inglés I:, 
+Matemática II: Matemática I,
+Física I: Matemática I,
+Lenguaje II: Lenguaje I,
+Venezuela Siglo XXI II: Venezuela Siglo XXI I,
+Inglés II: Inglés I,
+Matemática III: Matemática II,
+Física II: Física I,
+Lenguaje III: Lenguaje II,
+Venezuela Siglo XXI III: Venezuela Siglo XXI II,
+Inglés III: Inglés II,
+Estructuras Discretas I: Matemática III,
+Lógica Simbólica: Matemática II,
+Matemática IV: Matemática III,
+Estudios Generales I: Venezuela Siglo XXI III, Matemática III, Lenguaje III, Inglés III
+Estructuras Discretas II: Estructuras Discretas I, Lógica Simbólica,
+Algoritmos y Estructuras I: Lógica Simbólica,
+Estructuras Discretas III: Estructuras Discretas II,
+Algoritmos y Estructuras II: Algoritmos y Estructuras I,
+Laboratorio de Algoritmos y Estructuras II: Laboratorio de Algoritmos y Estructuras I,
+Matemática V: Matemática IV,
+Cálculo Numérico: Matemática IV, Laboratorio de Algoritmos y Estructuras I,
+Algoritmos y Estructuras III: Algoritmos y Estructuras II,
+Organización del Computador: Algoritmos y Estructuras II,
+Laboratorio de Algoritmos y Estructuras III: Laboratorio de Algoritmos y Estructuras II,
+Sistemas de Bases de Datos I: Algoritmos y Estructuras III,
+Sistemas de Información I: Sistemas de Bases de Datos I,
+Lenguajes de Programación: Algoritmos y Estructuras III,
+Modelos Lineales: Cálculo Numérico,
+Traductores e Interpretadores: Estructuras Discretas III, Algoritmos y Estructuras III,
+Laboratorio de Lenguajes de Programación: Lenguajes de Programación,
+Interfaces con el Usuario: Algoritmos y Estructuras III,
+Sistemas de Operación I: Organización del Computador,
+Estudios Generales II: Estudios Generales I,
+Estudios Generales III: Estudios Generales II,
+Estudios Generales IV: Estudios Generales III,
+Redes de Computadoras: Sistemas de Operación I,
+Ingeniería del Software I: Sistemas de Bases de Datos I,
+Probabilidad para Ingenieros: Matemática V,
+Estadística: Probabilidad para Ingenieros,
+Electiva de Área I: Traductores e Interpretadores, Ingeniería del Software I, Sistemas de Operación I, Estadística, Modelos Lineales
+Electiva de Área II: Electiva de Área I,
+Electiva de Área III: Electiva de Área II,
+Electiva de Área IV: Electiva de Área III,
+Electiva de Área V: Electiva de Área IV,
+Electiva de Área VI: Electiva de Área V,
+Estudios Generales V: Estudios Generales IV,
+Estudios Generales VI: Estudios Generales V,
+Electiva Libre I: Electiva de Área IV, Estudios Generales IV
+Pasantía: Electiva de Área VI, Estudios Generales IV
+Electiva Libre II: Electiva Libre I
+
+# Correquisitos
+Laboratorio de Algoritmos y Estructuras I, Algoritmos y Estructuras I
+Laboratorio de Algoritmos y Estructuras II, Algoritmos y Estructuras II
+Laboratorio de Lenguajes de Programación, Lenguajes de Programación
+Laboratorio de Algoritmos y Estructuras III, Algoritmos y Estructuras III
+Laboratorio de Bases de Datos I, Sistemas de Bases de Datos I
+
+# Trimestre
+Matemática III,

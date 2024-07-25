@@ -1,0 +1,34 @@
+# Requisitos
+Matemática II: Matemática I,
+Física I: Matemática I,
+Lenguaje II: Lenguaje I,
+Venezuela Siglo XXI II: Venezuela Siglo XXI I,
+Inglés II: Inglés I,
+Matemática III: Matemática II,
+Física II: Física I,
+Lenguaje III: Lenguaje II,
+Venezuela Siglo XXI III: Venezuela Siglo XXI II,
+Inglés III: Inglés II,
+Estructuras Discretas I: Matemática III,
+Lógica Simbólica: Matemática II,
+Matemática IV: Matemática III,
+Estructuras Discretas II: Estructuras Discretas I, Lógica Simbólica,
+Algoritmos y Estructuras I: Lógica Simbólica,
+Estructuras Discretas III: Estructuras Discretas II,
+Algoritmos y Estructuras II: Algoritmos y Estructuras I,
+Laboratorio de Algoritmos y Estructuras II: Laboratorio de Algoritmos y Estructuras I,
+Matemática V: Matemática IV,
+Cálculo Numérico: Matemática IV, Laboratorio de Algoritmos y Estructuras I,
+Algoritmos y Estructuras III: Algoritmos y Estructuras II,
+Organización del Computador: Algoritmos y Estructuras II,
+Sistemas de Bases de Datos I: Algoritmos y Estructuras III,
+Sistemas de Información I: Sistemas de Bases de Datos I,
+Lenguajes de Programación: Algoritmos y Estructuras III
+
+# Correquisitos
+Laboratorio de Algoritmos y Estructuras I, Algoritmos y Estructuras I
+Laboratorio de Algoritmos y Estructuras II, Algoritmos y Estructuras II
+
+
+# Trimestre
+Matemática II,

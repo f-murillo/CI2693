@@ -1,0 +1,9 @@
+# Requisitos
+Mate II: Mate I,
+Fisica I: Mate I,
+Fisica II: Fisica I , Mate I
+
+# Correquisitos
+
+# Trimestre
+Mate I,
