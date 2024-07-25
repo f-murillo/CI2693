@@ -1,5 +1,11 @@
 # Laboratorio 2: DFS, BFS y Backtracking
 
+# Integrantes
+
+Franco Murillo 16-10782
+Eliezer Cario 18-10605
+Fredthery Castro 18-10783
+
 * Problema1.py
     - Resuelve el problema de encontrar un camino en un laberinto 2D (matriz a*b con ceros y unos, donde un 1 representa una pared, y un 0 representa un camino libre) usando DFS recursivo
     - Se puede definir un grafo implícito (no hace falta declarar ningún grafo en el código) G = (V,E), donde:
