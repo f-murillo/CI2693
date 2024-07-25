@@ -1,3 +1,8 @@
+# Integrantes
+- Franco Murillo 16-10782
+- Eliezer Cario 18-10605
+- Fredthery Castro 18-10783
+
 # Proyecto 1: Implementación de un grafo dirigido con lista de adyacencias usando diccionario y listas
 
 - Sea el grafo dirigido G = (V, E) el grafo a implementar
