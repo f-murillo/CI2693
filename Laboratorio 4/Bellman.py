@@ -80,7 +80,7 @@ def bellman_gas_consumption(road_network, road_network_free, start_city, end_cit
             gas_consumption = (distance * gasoline_consumption_per_km) * ( 1 + (slope / 100) )
             if city in road_network_free:
                 gas_consumption *= -1
-            # Si el costo de u + el consumo de gasolina de ir de u a w es menor al costo de w, error, ciclo negativo
+            # Si el costo de u + el consumo de gasolina de ir de u a w es menor al costo de w: Error, ciclo negativo
             if cost[city] + gas_consumption < cost[w] and cost[w] != inf:
                 raise ValueError("El grafo contiene un ciclo de costo negativo.")
         
