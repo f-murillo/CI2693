@@ -74,7 +74,7 @@ class CustomMinHeap:
 
             
 def time_adjusted(distance, initial_v, slope):
-    """Calcula el tiempo de viaje ajustado teniendo en cuenta la pendiente de la carretera.
+    """ Metodo que calcula el tiempo de viaje ajustado (teniendo en cuenta la pendiente de la carretera)
 
     Args:
         distance (float): La distancia a recorrer.
@@ -93,10 +93,10 @@ def time_adjusted(distance, initial_v, slope):
         raise ValueError("The slope cannot be 90 degrees.")
     pen = (slope * math.pi) / 180
 
-    # Calcula la velocidad ajustada (tomando en cuenta la pendiente)
+    # Calcular la velocidad ajustada (tomando en cuenta la pendiente)
     adjusted_velocity = initial_v * math.cos(pen)
 
-    # Calcula el tiempo de viaje ajustado
+    # Calcular el tiempo de viaje ajustado
     return distance / adjusted_velocity
             
 def dijkstra_gas_consumption(road_network, start_city, end_city, initial_velocity, gasoline_consumption_per_km, initial_gasoline, max_time_extension_factor):
