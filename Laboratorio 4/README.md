@@ -8,12 +8,12 @@ Integrantes:
 
 Se desea calcular un camino de consumo de gasolina y tiempo óptimos, dados:
 - Una red de Carreteras
-- Pendiente de las carreteras (que pueden ir de -90 a 90)
-- Consumo de Gasolina, que se ajusta por el grado de la pendiente de la carretera
-- Velocidad Inicial en km/h
-- Gasolina Inicial en litros
-- Ciudad inicial
-- Ciudad destino
+- Las pendientes de las carreteras (que pueden ir de -90 a 90)
+- El consumo de gasolina por carretera, que se ajusta por el grado de la pendiente de la carretera
+- La velocidad inicial en km/h
+- La gasolina inicial en litros
+- La ciudad inicial
+- La ciudad destino
 - Un factor de extensión máxima de tiempo de viaje entre ciudades
 
 Si se modelase el problema usando un grafo:
@@ -21,12 +21,12 @@ Si se modelase el problema usando un grafo:
 - Los vértices son las ciudades
 - Los lados son las carreteras entre ciudades, donde cada lado tiene asociado un costo en consumo de gasolina
 
-Luego, para resolver el problema, se usará el algoritmo de Dijkstra.
+Luego, para resolver el problema, se usará el algoritmo de __Dijkstra__.
 
 Además, se desea considerar que en algunas ciudades dadas de la red, se tenga recarga de gasolina gratis, lo que implica
-un consumo negativo de gasolina. Para este caso se usará el algoritmo de Bellman. 
+un consumo negativo de gasolina. Para este caso se usará el algoritmo de __Bellman__. 
 
-# Dijkstra
+## Dijkstra
 - Se implementó una cola de prioridad usando un min heap, en la clase CustomMinHeap, el cual usa una lista para almacenar los 
 vértices y sus costos, y además un diccionario para almacenar los índices de los vértices, para poder ubicarlos en tiempo constante.
 
@@ -47,12 +47,12 @@ vértices y sus costos, y además un diccionario para almacenar los índices de 
     - Salida:
       - tiempo de viaje ajustado a la pendiente
     - Primero, verifica que la pendiente no sea exactamente 90 o -90, pues esos valores no tendrían sentido físico (Es decir, 90 sería como escalar una pared y -90 como caer por un acantilado), además de que por el tipo de cálculo usado darían como resultado una división entre 0.
-    - Para calcular el tiempo, se usa la fórmula: `tiempo = distancia / velocidad`
-    - Como se cuenta con una pendiente x, la velocidad viene dada por: `velocidad = velocidad_inicial * cos(x)`
-    - Pero el problema define la pendiente en grados, por lo que primero es transformado a radianes antes de calcular el coseno, usando la fórmula: `radianes = (x° * pi) / 180°`
+    - Para calcular el tiempo, se usa la fórmula: tiempo = distancia / velocidad
+    - Como se cuenta con una pendiente x, la velocidad viene dada por: velocidad = velocidad_inicial * cos(x)
+    - Pero el problema define la pendiente en grados, por lo que primero es transformado a radianes antes de calcular el coseno, usando la fórmula: radianes = (x° * pi) / 180°
     - Para usar pi, y para calcular el coseno, se hace uso del módulo math de Python
     - Ya con la velocidad calculada, se retorna el valor de la distancia dividida entre esta velocidad
-- **Algoritmo de Dijkstra** :
+- __Algoritmo de Dijkstra__
     - Se inicializan la lista con las claves de las ciudades y un diccionario de costos por ciudad, todos con infinito
     - Se establece el costo de la ciudad inicial en cero
     - Se crea la cola de prioridad, y se agrega la ciudad inicial con su costo
@@ -74,14 +74,14 @@ vértices y sus costos, y además un diccionario para almacenar los índices de 
         - Si su costo es infinito, no se halló un camino desde la ciudad inicial hasta el destino, por lo que se retorna None, None
         - Si su costo es distinto de infinito, se halló un camino desde la ciudad inicial, por lo que se retorna el costo del destino, y el tiempo acumulado del viaje
 
-- **Complejidad de Dijkstra** :
+- __Complejidad de Dijkstra__ :
     - La función `time_adjusted` es O(1)
     - Se accede a cada ciudad (vértice) una vez. Si llamamos n al número de vértices, esto es O(n)
     - Se accede a cada adyacente de cada ciudad una vez (a cada lado una vez). Si llamamos m al número de lados, esto es O(m)
     - Se actualiza o se agrega a la cola de prioridad en el peor caso m veces. Tanto agregar como actualizar son O(log(n)), por lo que la complejidad de agregar o actualizar en el ciclo es O(m * log(n))
     - Finalmente, la complejidad total es O(m * log(n)), donde m es el número de lados, y n el número de vértices      
 
-# Bellman
+## Bellman
 - La entrada del programa es el mismo, pero se agrega una lista de ciudades donde se cuenta con recarga gratuita de gasolina
 - El enfoque es parecido al de Dijkstra, pero usando fuerza bruta (recorriendo todos los lados posibles de la red de carreteras)
 - Como se van a verificar todos los lados, no se utiliza la cola de prioridad
@@ -113,6 +113,3 @@ vértices y sus costos, y además un diccionario para almacenar los índices de 
     - Se itera n-1 veces, donde n es el número de vértices, esto es O(n)
     - Se itera sobre todos los lados posibles, donde m es el número de lados. Esto es O(m)
     - Finalmente, la complejidad de `Bellman` es O(n * m)               
-    
-
-    
