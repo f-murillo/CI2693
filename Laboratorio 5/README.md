@@ -1,17 +1,21 @@
-###### Laboratorio 5 - Franco Murillo - 1610782 ######
+# Laboratorio 5 
+
+Franco Murillo - 1610782   
+
+-------------------------------------------
 
 El problema trata de ayudar a un estudiante a determinar cuántos trimestres le faltan para poder graduarse, asumiendo que puede meter todas las materias posibles por trimestre (asumiremos que cuenta con permiso de créditos permanente)
 
 Podemos definir el problema de la siguente manera: 
-• Dado un archivo con la siguiente estructura:
-    • Contiene una sección # Requisitos, seguida de líneas con cada materia y sus requisitos en el formato: Materia: Requisito1, Requisito2, ....
-    • Luego, hay una línea # Correquisitos, con pares de materias separadas por una coma.
-    • Finalmente, hay una línea # Semestre, seguida de las materias que el estudiante está cursando en el trimestre actual o el anterior (si está en vacaciones), separadas por un espacio en blanco.
+- Dado un archivo con la siguiente estructura:
+    - Contiene una sección # Requisitos, seguida de líneas con cada materia y sus requisitos en el formato: Materia: Requisito1, Requisito2, ....
+    - Luego, hay una línea # Correquisitos, con pares de materias separadas por una coma.
+    - Finalmente, hay una línea # Semestre, seguida de las materias que el estudiante está cursando en el trimestre actual o el anterior (si está en vacaciones), separadas por un espacio en blanco.
 
-• Se debe retornar una lista de trimestres, las cuales deben contener las materias a cursar por el estudiante para poder graduarse, tomando en cuenta los requisitos y correquisitos
+- Se debe retornar una lista de trimestres, las cuales deben contener las materias a cursar por el estudiante para poder graduarse, tomando en cuenta los requisitos y correquisitos
 
 
-###### Métodos usados para resolver el problema ######
+## Métodos usados para resolver el problema
 
 Los métodos se encuentran en el archivo "orden.py"
 
