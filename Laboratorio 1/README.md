@@ -3,7 +3,7 @@
 # Hecho por: Franco Murillo - 1610782
 
 # Ejercicio1.py
-- Contiene la implementación de las dos versiones del algoritmo de Roy-Warshall para calcular la matriz de alcance de un grafo implementado con una matriz de adyacencias.
+- Contiene la implementación de las dos versiones del algoritmo Roy-Warshall para calcular la matriz de alcance de un grafo implementado con una matriz de adyacencias.
 
 # Ejercicio2.py
 - Contiene la implementación del algoritmo que calcula las componentes conexas de un grafo implementado con una matriz de adyacencias.
@@ -38,4 +38,5 @@
     - Cuál es la matriz de adyacencias correspondiente a los 9 usuarios
     - Cuál es la matriz de alcance (qué usuarios son potencialmente amigos de otros usuarios)
     - Cuáles son las componentes conexas (qué grupos de amigos se han formado)
+
     - Cuáles son los puntos de articulación (qué usuarios mantienen los grupos de amigos unidos)
